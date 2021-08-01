@@ -9,7 +9,7 @@ SCREEN_X, SCREEN_Y = pyautogui.size()
 IMG_PATH = os.path.join(os.getcwd(), 'img')
 IMG_FILES = [os.path.join(IMG_PATH, f)
              for f in os.listdir(IMG_PATH) if os.path.isfile(os.path.join(IMG_PATH, f))]
-
+IMG_FILES.sort()
 
 def move_mouse():
     x = random.randint(0, SCREEN_X)
